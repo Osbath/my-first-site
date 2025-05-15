@@ -6,3 +6,4 @@
 </main>
 
 @include('includes.foot')
+

@@ -13,6 +13,9 @@
             </li>
             <li class="nav-item">
     <a class="nav-link" href="/names">Nevek</a>
+    <li class="nav-item">
+    <a class="nav-link" href="/names/manage/surname">Családnevek</a>
+</li>
 </li>
         </ul>
     </div>
