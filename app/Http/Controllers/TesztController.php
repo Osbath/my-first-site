@@ -27,4 +27,13 @@ public function names()
         return view('pages.names', compact('names'));
     }
 
+public function namesCreate($name)
+{
+    $nameRecord = new Name();
+    $nameRecord->name = $name;
+    $nameRecord->save();
+
+    return $nameRecord->id;
+}
+
 }

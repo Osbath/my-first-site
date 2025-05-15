@@ -14,3 +14,5 @@ $names = [
         $randomName = $names[$randomNameKey];
         
 Route::get('/names', 'App\Http\Controllers\TesztController@names');
+
+Route::get('/names/create/{name}', 'TesztController@namesCreate');
