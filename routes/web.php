@@ -24,3 +24,11 @@ Route::get('/names/manage/surname', 'App\Http\Controllers\TesztController@manage
 Route::post('/names/manage/surname/delete', 'App\Http\Controllers\TesztController@deleteSurname');
 Route::post('/names/manage/surname/new', 'App\Http\Controllers\TesztController@newSurname');
 Route::post('/names/manage/name/new', 'App\Http\Controllers\TesztController@newName');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

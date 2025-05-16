@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -269,9 +271,9 @@
                 </div>
             </main>
         </div>
-
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
     </body>
+
 </html>

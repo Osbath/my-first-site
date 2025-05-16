@@ -80,4 +80,5 @@
 });
         });
     </script>
+        <example-component></example-component>
 @endsection
