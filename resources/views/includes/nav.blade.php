@@ -18,5 +18,20 @@
 </li>
 </li>
         </ul>
+        <ul class="navbar-nav">
+        @auth
+        <li class="nav-item">
+            <a class="nav-link" href="#" onclick="event.preventDefault();document.getElementById('form-logout').submit();">Kijelentkezés</a>
+            <form id="form-logout" action="/logout" method="post">@csrf</form>
+        </li>
+        @else
+        <li class="nav-item">
+            <a class="nav-link" href="/login">Bejelentkezés</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/register">Regisztráció</a>
+        </li>
+        @endauth
+    </ul>
     </div>
 </nav>

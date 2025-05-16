@@ -2,10 +2,7 @@
 @section('title', '| Teszt oldal')
 
 @section('content')
-@extends('layouts.app')
-@section('title', '| Teszt oldal')
 
-@section('content')
 <div class="jumbotron">
     <h1>{{ $randomName }}</h1>
     <p class="lead">Ez az első demo route-unk!</p>

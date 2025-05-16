@@ -1,3 +1,6 @@
+@include('includes.head')
+@include('includes.nav')
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -14,11 +17,12 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
 
 </head>
 <body>
     <div>
+                <div id="vue-root">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -76,7 +80,7 @@
         <main class="py-4">
             @yield('content')
         </main>
-        <div id="vue-root">
+
     <example-component></example-component>
 </div>
     </div>
