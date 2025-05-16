@@ -17,8 +17,6 @@
     <a class="nav-link" href="/names/manage/surname">Családnevek</a>
 </li>
 </li>
-        </ul>
-        <ul class="navbar-nav">
         @auth
         <li class="nav-item">
             <a class="nav-link" href="#" onclick="event.preventDefault();document.getElementById('form-logout').submit();">Kijelentkezés</a>
@@ -32,6 +30,7 @@
             <a class="nav-link" href="/register">Regisztráció</a>
         </li>
         @endauth
-    </ul>
+        </ul>
+
     </div>
 </nav>

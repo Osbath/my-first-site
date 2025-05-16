@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@section('title', '| Nevek')
+
 
 @section('content')
 <div class="container">
@@ -10,7 +12,9 @@
             <th>Családnév</th>
             <th>Név</th>
             <th>Létrehozás</th>
+            @auth
             <th>Műveletek</th>
+            @endauth
         </tr>
     </thead>
     <tbody>
@@ -24,9 +28,11 @@
                 @endempty
                 <td>{{ $name->name }}</td>
                 <td>{{ $name->created_at }}</td>
+                @auth
                 <td>
                     <a href="#" class="btn btn-sm btn-danger btn-delete-name" data-id="{{ $name->id }}">Törlés</a>
                 </td>
+                @endauth
             </tr>
         @endforeach
     </tbody>
