@@ -12,4 +12,3 @@
     <example-component></example-component>
 </div>
 @endsection
-@endsection
