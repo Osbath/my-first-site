@@ -1,5 +1,7 @@
 @include('includes.head')
 @include('includes.nav')
+@include('includes.foot')
+
 
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
